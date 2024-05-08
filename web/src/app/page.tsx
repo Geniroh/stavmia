@@ -1,12 +1,23 @@
+import FeaturedInnovations from "@/components/FeaturedInnovations";
+import InnovationTable from "@/components/InnovationTable";
+import Navbar from "@/components/Navbar";
 import { Button } from "antd";
 
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-        <h1 className="text-2xl">Hello world</h1>
+    <>
+        <Navbar />
+        <main className="">
+          <section className="max-w-[1200px] mx-auto py-10">
+            <FeaturedInnovations />
+          </section>
 
-        <Button>Click me</Button>
-    </main>
+          <section className="max-w-[1200px] mx-auto py-10">
+            <InnovationTable />
+          </section>
+
+        </main>
+    </>
   );
 }

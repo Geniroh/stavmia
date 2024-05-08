@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 
 const RootLayout = ({ children }: React.PropsWithChildren) => (
   <html lang="en">
-    <body>
+    <body className="font-open-sans">
       <AntdRegistry>{children}</AntdRegistry>
     </body>
   </html>
