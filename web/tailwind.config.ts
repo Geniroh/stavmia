@@ -21,6 +21,7 @@ const config: Config = {
         "myblack": "#242424",
         "mygray": "#888888",
         "mypurple": "#9430E3",
+        "myoffwhie": "#fafafa",
       }
     },
   },

@@ -24,6 +24,7 @@ const navLinks = [
 
 const Navbar = () => {
     const pathname = usePathname()
+    console.log(pathname)
   return (
     <>
         <Row className='flex items-center min-h-[90px] text-[18px] border-b px-4'>

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import React from 'react';
 import { AntdRegistry } from '@ant-design/nextjs-registry';
 import "./globals.css";
+import SessionWrapper from "@/components/SessionWrapper";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -9,11 +10,13 @@ export const metadata: Metadata = {
 };
 
 const RootLayout = ({ children }: React.PropsWithChildren) => (
-  <html lang="en">
-    <body className="font-open-sans">
-      <AntdRegistry>{children}</AntdRegistry>
-    </body>
-  </html>
+  <SessionWrapper>
+    <html lang="en">
+      <body className="font-open-sans">
+        <AntdRegistry>{children}</AntdRegistry>
+      </body>
+    </html>
+  </SessionWrapper>
 );
 
 export default RootLayout;
